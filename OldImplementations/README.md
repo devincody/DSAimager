@@ -14,21 +14,21 @@ I initially decided not to use git to track files. Now that I'm using git, this 
     2. Used Armadillo for FFT. 
     3. Reading data from .fits files.
 2. vis2.cpp
-  1. Replaced Armadillo with FFTW.
+    1. Replaced Armadillo with FFTW.
 3. vis2_withCal.cpp
-  1. Included baseline-based calibrators for the visibilities.
+    1. Included baseline-based calibrators for the visibilities.
 4. gpu_vis.cu
-  1. Replaced FFTW with CuFFT. Still gridding on CPU.
+    1. Replaced FFTW with CuFFT. Still gridding on CPU.
 5. gpu_vis.cu
-  1. Gridding moved to GPU.
+    1. Gridding moved to GPU.
 6. gpu_vis_streamed.cu
-  1. Enabled streams for asynchronous execution on GPU for higher throughput. Uses thrust::copy_if() to analyze images.
+    1. Enabled streams for asynchronous execution on GPU for higher throughput. Uses thrust::copy_if() to analyze images.
 7. realtime_imager.cu
-  * Made several performance upgrades
+    * Made several performance upgrades
 8. realtime_imager2.cu
-  * Included #if debug statements to remove any extraneous calculations or print statements. Speed up gridding step by enabling a single thread to handle each frequency.
+    * Included #if debug statements to remove any extraneous calculations or print statements. Speed up gridding step by enabling a single thread to handle each frequency.
 9. realtime_dada.cu
-  * Data is no longer read from .fits files, but instead is read from dada buffers. Indexing of input data is changed
+    * Data is no longer read from .fits files, but instead is read from dada buffers. Indexing of input data is changed
 10. realtime_dada_dev.cu
-  * Performance enhancements, included ability to write images to .fits files, fixed the gridding step which was causing high frequencies to be mapped to low frequencies and low frequencies to be mapped to high frequencies
+    * Performance enhancements, included ability to write images to .fits files, fixed the gridding step which was causing high frequencies to be mapped to low frequencies and low frequencies to be mapped to high frequencies
   
