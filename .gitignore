@@ -1,7 +1,26 @@
 DB.hh
+
+# Executables
 map
 std
 vis
+test
+test_cal
+sfml
+vis
+vis2
+viscal
+output
+fftw
+
+# Misc. Python Files
 *.pyc
+*.npz
+
+# Other Files
 *~
 untitled.cpp
+*.txt
+*.png
+*.jpg
+*.nvvp
