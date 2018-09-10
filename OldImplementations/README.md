@@ -3,16 +3,16 @@ I initially decided not to use git to track files. Now that I'm using git, this 
 
 ## (Rough) Chronology and (Approximate) Descriptions
 -2. ../Python/fftVolt.py 
-  1. Proof of concept code. 
-  2. Imaged with raw-voltages (beam-formed) or visibilities (imaging), with made-up data or actual data.
+    1. Proof of concept code. 
+    2. Imaged with raw-voltages (beam-formed) or visibilities (imaging), with made-up data or actual data.
 -1. ../Python/fftVolt2.py
-  * Worked fully.
+    * Worked fully.
 0. ../Python/fftVolt_withCal.py
-  * Included baseline-based calibrators for the visibilities.
+    * Included baseline-based calibrators for the visibilities.
 1. vis.cpp
-  1. Initial port of python implementation to C++.
-  2. Used Armadillo for FFT. 
-  3. Reading data from .fits files.
+    1. Initial port of python implementation to C++.
+    2. Used Armadillo for FFT. 
+    3. Reading data from .fits files.
 2. vis2.cpp
   1. Replaced Armadillo with FFTW.
 3. vis2_withCal.cpp
