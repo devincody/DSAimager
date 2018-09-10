@@ -2,18 +2,18 @@
 I initially decided not to use git to track files. Now that I'm using git, this folder contains a backups of my code at various stages.
 
 ## (Rough) Chronology and (Approximate) Descriptions
-0. ../Python/fftVolt.py 
-    * Proof of concept code. 
-    * Imaged with raw-voltages (beam-formed) or visibilities (imaging)
-    *  Could use made-up data or actual data.
-1. ../Python/fftVolt2.py
-    * Worked fully.
-2. ../Python/fftVolt_withCal.py
-    * Included baseline-based calibrators for the visibilities.
+0. [../Python/fftVolt.py ](https://github.com/devincody/DSAimager/blob/master/Python/fftVolt.py)
+    1. Proof of concept code. 
+    2. Imaged with raw-voltages (beam-formed) or visibilities (imaging)
+    3. Could use made-up data or actual data.
+1. [../Python/fftVolt2.py](https://github.com/devincody/DSAimager/blob/master/Python/fftVolt2.py)
+    1. Worked fully.
+2. [../Python/fftVolt_withCal.py](https://github.com/devincody/DSAimager/blob/master/Python/fftVolt_withCal.py)
+    1. Included baseline-based calibrators for the visibilities.
 3. vis.cpp
-    * Initial port of python implementation to C++.
-    * Used Armadillo for FFT. 
-    * Reading data from .fits files.
+    1. Initial port of python implementation to C++.
+    2. Used Armadillo for FFT. 
+    3. Reading data from .fits files.
 4. vis2.cpp
     * Replaced Armadillo with FFTW.
 5. vis2_withCal.cpp
