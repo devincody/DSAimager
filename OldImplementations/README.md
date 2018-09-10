@@ -2,6 +2,8 @@
 I initially decided not to use git to track files. Now that I'm using git, this folder contains a backups of my code at various stages.
 
 ## (Rough) Chronology and (Approximate) Descriptions
+Basically what I would have commented if I had used git from the start.
+
 1. [../Python/fftVolt.py ](https://github.com/devincody/DSAimager/blob/master/Python/fftVolt.py)
     * Proof of concept code
     * Imaged with raw-voltages (beam-formed) or visibilities (imaging)
