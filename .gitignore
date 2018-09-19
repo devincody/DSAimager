@@ -1,6 +1,7 @@
 DB.hh
 
 # Executables
+real
 map
 std
 vis
