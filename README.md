@@ -15,9 +15,9 @@ Data from the antennas is collected in dada ring buffers before being transfered
 
 ## How do I run the code?
 ```console
-user@dsamaster:~$ make
-user@dsamaster:~$ dada_db -k <name, e.g., dada> -n <number of blocks, e.g., 8> -b <number of bytes per block, which should be 42240000 = 125 chans * 2 pols * 2 complex * 384 time samples * sizeof(float)> -l -p 
-user@dsamaster:~$ ./real -k <name, e.g., dada> -c <cpu number> -g <gpu number>
+$ make
+$ dada_db -k <name, e.g., dada> -n <number of blocks, e.g., 8> -b <number of bytes per block, which should be 42240000 = 125 chans * 2 pols * 2 complex * 384 time samples * sizeof(float)> -l -p 
+$ ./real -k <name, e.g., dada> -c <cpu number> -g <gpu number>
 user@dsamaster:~$ dada_junkdb -c 0 -k <name, e.g., dada> -r <dada rate in MB/s, which should be 105> -t <seconds to run for, e.g., 500> /mnt/nfs/code/dsaX/src/correlator_header_dsaX.txt
 ```
 
